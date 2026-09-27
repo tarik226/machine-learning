@@ -1,0 +1,48 @@
+{
+    "model": "RandomForestRegressor",
+    "n_estimators": 100,
+    "random_state": 42,
+    "target": "price",
+
+    "categorical_features": [
+        "airline",
+        "source_city",
+        "departure_time",
+        "arrival_time",
+        "destination_city"
+    ],
+
+    "numerical_features": [
+        "duration",
+        "days_left"
+    ],
+
+    "ordinal_features": [
+        "class",
+        "stops"
+    ],
+
+    "ordinal_categories": {
+        "class": [
+            "Economy",
+            "Business"
+        ],
+        "stops": [
+            "zero",
+            "one",
+            "two_or_more"
+        ]
+    },
+
+    "expected_features": [
+        "airline",
+        "source_city",
+        "departure_time",
+        "arrival_time",
+        "destination_city",
+        "class",
+        "stops",
+        "duration",
+        "days_left"
+    ]
+}
